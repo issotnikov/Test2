@@ -19,6 +19,9 @@ pipeline {
         stage("Second step") {
             steps {
                 sh 'ssh root@CentOStest2 \'uptime\''
+        stage("Third step") {
+            steps {
+                sh 'ssh root@CentOStest2 \'dnf update\''
             }
         }
     }
