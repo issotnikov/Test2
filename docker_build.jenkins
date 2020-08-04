@@ -15,8 +15,8 @@ pipeline {
             steps {
 				echo "================start building image=================="
 				dir('docker/tolbox') {
-                sh 'ssh root@CentOStest2 \'docker build .\''
-				}
+					sh 'docker build .'
+  				}
             }
         }
     }
